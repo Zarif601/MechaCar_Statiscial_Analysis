@@ -2,6 +2,8 @@
 
 ## Linear Regression to Predict MPG
 
+![Linear Regression screenshot](https://github.com/Zarif601/MechaCar_Statiscial_Analysis/blob/main/Resources/Linear%20Regression%20screenshot.PNG)
+
 1. The variables vehicle_length and ground_clearance (as well as the intercept) provided a non-random amount of variance to the mpg values in the dataset.
 
 2. The slope of the linear model cannot be cosnidered zero because out p-value is 5.35e-11 which is much smaller than our assumed significance level of 0.05%.
@@ -10,11 +12,23 @@
 
 ## Summary Statistics on Suspencion Coils
 
+![total_summary](https://github.com/Zarif601/MechaCar_Statiscial_Analysis/blob/main/Resources/total_summary.PNG)
+
+![lot_summary](https://github.com/Zarif601/MechaCar_Statiscial_Analysis/blob/main/Resources/lot_summary.PNG)
+
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 PSI. From the total_summary dataframe we can see that the overall variance is 62.29 which is well under our threshold of 100. However, looking at the lot_summary dataframe we can observe that even though the variance of suspension coils in Lot 1 and Lot 2 meet the requirements, the variance of suspension coils in Lot 3 is 170.29 which far exceeds the 100 PSI variance threshold and hence doesn't meet the design specification.
 
 ## T-Tests on Suspension Coils
 
+![All_Lots](https://github.com/Zarif601/MechaCar_Statiscial_Analysis/blob/main/Resources/T-Test%20All%20Lots.PNG)
+
 Performing t-test on the PSI across all manufacturing lots we found that the p-value was 0.06 while our significance level was 0.05%. Since the p-value was larger than our significance level, we can conclude that the PSI across all manufacturing lots was not statistically different from the population mean of 1500 PSI.
+
+![Lot1](https://github.com/Zarif601/MechaCar_Statiscial_Analysis/blob/main/Resources/T-Test%20Lot1.PNG)
+
+![Lot2](https://github.com/Zarif601/MechaCar_Statiscial_Analysis/blob/main/Resources/T-Test%20Lot2.PNG)
+
+![Lot3](https://github.com/Zarif601/MechaCar_Statiscial_Analysis/blob/main/Resources/T-Test%20Lot3.PNG)
 
 While performing t-test on the PSI of individual lots, the p-values of Lot1, Lot2, and Lot3 were 1, 0.61 and 0.42 respectively. Here the p-values of both Lot1 and Lot2 were larger than the significance level of 0.05%. However, the p-value of Lot3 was smaller than our significance level, indicating that only for Lot3, the PSI there was statistically different from the population mean of 1500.
 
